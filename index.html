@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Navbar -->
+    <header class="w-full bg-white shadow-md sticky top-0 z-50 h-20">
+        <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 sm:py-3 lg:py-2">
+            <div class="flex justify-between items-center h-16">
+
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-[#0079c0]">
+                        <img class="w-28 md:w-36" src="img/logo.webp" alt="">
+                    </a>
+                </div>
+
+                <!-- CTA Buttons (Responsive) -->
+                <div class="flex items-center space-x-3">
+
+                    <!-- Mail Button -->
+                    <a href="mailto:info@theneedleads.com"
+                        class="p-2 md:px-4 md:py-2 rounded-full text-black font-semibold flex items-center justify-center bg-[#f85a03]">
+                        <i class="fa-solid fa-envelope" style="color: #000000;"></i>
+                        <span class="hidden md:inline ml-2">info@theneedleads.com</span>
+                    </a>
+
+                    <!-- Call Button -->
+                    <a href="tel:+918750500075"
+                        class="p-2 md:px-4 md:py-2 rounded-full text-white font-semibold flex items-center justify-center bg-[#f85a03]">
+                        <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        <span class="hidden md:inline ml-2">+91 87505 00075</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Form and Image -->
+    <section class="bg-gray-50 w-full py-10">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-10">
+
+            <!-- Left: Content & Form -->
+            <div class="w-full md:w-1/2">
+                <h1 class="text-4xl font-bold text-black mb-4">
+                    Rank on Google's 1st Page <br />
+                    with <span class="text-[#f85a03]">Human + AI SEO</span>
+                </h1>
+                <p class="text-gray-600 mb-6">
+                    Grow online with India's Best Human+AI Assisted SEO Agency that drives revenue generating traffic to
+                    your website.
+                </p>
+
+                <form action="https://formsubmit.co/info@theneedleads.com" method="post" id="seoForm" class="space-y-4" >
+                    <input type="email" name="email" required placeholder="email@business.com"
+                        class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f85a03]" />
+
+                    <div class="flex gap-2">
+                        <input type="text" required value="+91" readonly
+                            class="w-1/4 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f85a039]" />
+                        <input type="tel"  name="phone" required placeholder="12345 67890"
+                            class="w-3/4 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f85a03]" />
+                    </div>
+
+                    <input type="url" name="website" required placeholder="www.company.com"
+                        class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f85a03]" />
+
+                    <button type="submit"
+                        class="w-full py-3 bg-[#f85a03] text-white font-semibold rounded-md hover:bg-[#0e2656] transition">
+                        Get In Touch
+                    </button>
+
+                    <p class="text-sm text-gray-500 mt-2 text-center">Free consultation. No sales pitch.</p>
+                </form>
+
+                <!-- Acknowledgment Message -->
+                <div id="formAck" class="hidden text-green-600 mt-4 font-medium">
+                    Thank you! Your information has been submitted.
+                </div>
+            </div>
+
+            <!-- Right: Image and Info -->
+            <div class="w-full md:w-1/2 relative">
+                <div class="rounded-3xl overflow-hidden relative shadow-xl">
+                    <img src="img/1.avif" alt="Teamwork" class="w-full h-auto object-cover" />
+
+                    <!-- Overlay Tag -->
+                    <div class="absolute top-4 left-4 bg-black/50 text-white px-4 py-2 rounded-lg text-sm md:text-base">
+                        <strong class="block text-lg">Ranked #1</strong>
+                        <span>for How to assess compliance & 21 other non-branded keywords.</span>
+                    </div>
+
+                    <!-- Testimonial Bubble -->
+                    <div class="absolute bottom-4 right-4 bg-white p-4 rounded-xl shadow-lg w-[90%] md:w-[80%]">
+                        <div class="flex items-center gap-3 mb-2">
+                            <img src="https://i.pravatar.cc/40?img=5" alt="Eric" class="rounded-full w-10 h-10" />
+                            <div>
+                                <p class="font-semibold">Eric Dates <span class="text-blue-500">✔</span></p>
+                                <p class="text-sm text-gray-500">Head of GTM at VComply</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-700">
+                            Within a year, our website <strong>visitors have grown by over 55%</strong>, and our
+                            <strong>search impressions</strong> have surpassed <strong>1.3 million</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEO Challenges Section -->
+    <section class="bg-white w-full py-16 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">
+                <span class="text-[#f85a03]">Struggling to do SEO</span> amidst Budget,<br />
+                <span class="text-black">Time, & Resource Constraints?</span>
+            </h2>
+
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+
+                <!-- Card 1 -->
+                <div class="bg-gray-50 rounded-2xl shadow p-6 hover:shadow-md transition">
+                    <img src="img/hand-holding-growth-arrow-with-coins_23-2148780591.avif" alt="Steep Costs"
+                        class="rounded-lg mb-4 w-full object-cover" />
+                    <h3 class="font-semibold text-lg mb-2">Steep conventional costs</h3>
+                    <p class="text-gray-600 text-sm">
+                        Traditional agencies and freelancers/consultants charge a ton of money but fail to bring in a
+                        sizeable impact when it comes to moving the needle on key metrics like traffic.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-gray-50 rounded-2xl shadow p-6 hover:shadow-md transition">
+                    <img src="img/retro-black-alarm-clock-dissolving-into-little-particles-time-can-return-never-wait-anyone-time-management-concept_616485-70.avif"
+                        alt="Time Crunch" class="rounded-lg mb-4 w-full object-cover" />
+                    <h3 class="font-semibold text-lg mb-2">Time Crunch</h3>
+                    <p class="text-gray-600 text-sm">
+                        You are always racing against time to deliver, and more often than not, you might be busy with
+                        product or business development rather than investing time in SEO.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-gray-50 rounded-2xl shadow p-6 hover:shadow-md transition">
+                    <img src="img/character-illustration-people-with-packages-shipment_53876-66109.avif"
+                        alt="Limited Capacity" class="rounded-lg mb-4 w-full object-cover" />
+                    <h3 class="font-semibold text-lg mb-2">Limited in-house Capacity</h3>
+                    <p class="text-gray-600 text-sm">
+                        Operating with lean teams, most of which are busy manning other important business functions,
+                        leaves little to no room for setting up a separate in-house team for SEO.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Button -->
+            <div class="mt-12">
+                <a href="#get_in_touch"
+                    class="inline-block bg-[#f85a03] text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-500 transition">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Start -->
+    <section class="bg-[#F8FAFC] px-6 py-16 md:px-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-black mb-8">
+                Best <span class="text-[#f85a03]"> SEO Services </span> Company<br class="hidden md:block" />
+                In India Serving Globally
+            </h2>
+
+            <!-- Bullet Points -->
+            <ul class="text-left text-lg space-y-4 mb-10 text-[#1B1B1B]">
+                <li class="flex items-start">
+                    <span class="text-red-500 text-xl mr-2">✔️</span>
+                    We help you outrank your competitors from first position
+                </li>
+                <li class="flex items-start">
+                    <span class="text-red-500 text-xl mr-2">✔️</span>
+                    We use reliable tools to research the best keyword for your business
+                </li>
+                <li class="flex items-start">
+                    <span class="text-red-500 text-xl mr-2">✔️</span>
+                    We offer custom SEO solutions as per your need
+                </li>
+                <li class="flex items-start">
+                    <span class="text-red-500 text-xl mr-2">✔️</span>
+                    We do quality backlinking to boost your ranking on Google
+                </li>
+                <li class="flex items-start">
+                    <span class="text-red-500 text-xl mr-2">✔️</span>
+                    From keyword research to internal content linking, we do it all
+                </li>
+                <li class="flex items-start">
+                    <span class="text-red-500 text-xl mr-2">✔️</span>
+                    We offer affordable SEO packages for small business
+                </li>
+                <li class="flex items-start">
+                    <span class="text-red-500 text-xl mr-2">✔️</span>
+                    Google and Bing certified SEO tech experts
+                </li>
+                <li class="flex items-start">
+                    <span class="text-red-500 text-xl mr-2">✔️</span>
+                    We follow 100% Google and Bing safe backlink strategy
+                </li>
+                <li class="flex items-start">
+                    <span class="text-red-500 text-xl mr-2">✔️</span>
+                    Over 5+ years of experience in organic SEO services
+                </li>
+            </ul>
+
+            <!-- CTA -->
+            <p class="text-lg font-semibold mb-4">
+                <span class="italic underline text-black">WhatsApp us for a call back:</span>
+            </p>
+            <a href="https://wa.me/8750500075" target="_blank"
+                class="inline-flex items-center gap-2 bg-[#f85a03] hover:bg-orange-500 text-white text-lg font-semibold py-3 px-6 rounded-full transition">
+                <!-- WhatsApp SVG Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 32 32" class="w-6 h-6">
+                    <path
+                        d="M16.003 2.991c-7.287 0-13.2 5.914-13.2 13.2 0 2.325.604 4.584 1.75 6.577l-1.828 6.682 6.84-1.794c1.923 1.05 4.107 1.606 6.438 1.606 7.287 0 13.2-5.914 13.2-13.2s-5.913-13.2-13.2-13.2zm0 24.288c-1.963 0-3.872-.526-5.543-1.52l-.397-.234-4.063 1.066 1.082-3.978-.258-.408c-1.088-1.724-1.661-3.708-1.661-5.724 0-6.03 4.91-10.939 10.94-10.939 6.03 0 10.939 4.91 10.939 10.94s-4.909 10.939-10.939 10.939zm6.212-8.155c-.34-.17-2.015-.993-2.327-1.105-.313-.113-.54-.17-.768.17-.227.34-.879 1.105-1.078 1.33-.198.226-.396.255-.736.085-.34-.17-1.436-.53-2.735-1.69-1.011-.902-1.692-2.015-1.89-2.354-.198-.34-.021-.523.149-.692.153-.152.34-.397.51-.595.17-.198.227-.34.34-.566.113-.226.057-.425-.028-.595-.085-.17-.768-1.85-1.053-2.537-.277-.665-.56-.57-.768-.58l-.655-.012c-.227 0-.595.085-.907.425s-1.193 1.165-1.193 2.843 1.222 3.296 1.391 3.524c.17.226 2.404 3.684 5.827 5.167.814.352 1.448.562 1.942.719.816.26 1.559.224 2.146.136.655-.098 2.015-.823 2.299-1.616.283-.793.283-1.47.198-1.616-.085-.141-.311-.227-.65-.396z" />
+                </svg>
+                +91 87505 00075
+            </a>
+        </div>
+    </section>
+    <!-- Section End -->
+
+    <!-- Brand Section -->
+    <section class="bg-white py-16 px-4 md:px-20">
+        <div class="max-w-6xl mx-auto text-center">
+            <!-- Title -->
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                <span class="text-black">Global</span> <span class="text-[#f85a03]">Brands</span>
+                <span class="text-black">That Have Trusted Us</span>
+            </h2>
+
+            <!-- Subtitle -->
+            <p class="text-[#1B1B1B] text-lg mb-10 max-w-3xl mx-auto">
+                We have unlocked the potential of these global brands with our organic SEO. From planning,
+                strategy to implementation, we have done everything for them.
+            </p>
+
+            <!-- Logos Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center justify-items-center">
+                <!-- Replace src with actual logo paths -->
+                <img src="logos/kohlico.png" alt="Kohlico Group" class="h-14 object-contain" />
+                <img src="logos/sugandh.png" alt="Sugandh Tea Group" class="h-14 object-contain" />
+                <img src="logos/docpulse.png" alt="Docpulse" class="h-14 object-contain" />
+                <img src="logos/ubx.png" alt="UBX" class="h-14 object-contain" />
+                <img src="logos/shreeji.png" alt="Shreeji" class="h-14 object-contain" />
+                <img src="logos/crunk.png" alt="Crunk Thread" class="h-14 object-contain p-2 rounded" />
+                <img src="logos/dpp.png" alt="District Performance Physio" class="h-14 object-contain" />
+                <img src="logos/scl.png" alt="SCL" class="h-14 object-contain" />
+                <img src="logos/lemonlords.png" alt="Lemonlords" class="h-14 object-contain" />
+                <img src="logos/bjseal.png" alt="BJ Seal" class="h-14 object-contain" />
+                <img src="logos/mtt.png" alt="Majestic Taj Tours" class="h-14 object-contain" />
+                <!-- Add more logos below as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- What we Offer -->
+    <section class="bg-[#F8FAFC] py-16 px-4 md:px-20">
+        <div class="max-w-7xl mx-auto text-center">
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+                <span class="text-[#f85a03]"> Best </span> SEO Services That We Offer
+            </h2>
+
+            <!-- Underline -->
+            <div class="w-16 h-1 bg-[#f85a03] mx-auto mb-6 rounded"></div>
+
+            <!-- Subtext -->
+            <p class="text-gray-700 text-lg max-w-3xl mx-auto mb-12">
+                We offer four different type of SEO for small business which you can choose from. Our experts
+                will suggest what you should choose after analyzing your business and requirement.
+            </p>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+                    <div class="text-[#f85a03] text-3xl mb-4">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3 class="text-[#002E6E] font-bold text-lg mb-2">GLOBAL SEO SERVICES</h3>
+                    <p class="text-gray-700">
+                        We combine creative SEO tactics, enhanced marketing techniques, and high-end inbound content
+                        marketing to help businesses rank globally.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+                    <div class="text-[#f85a03] text-3xl mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-[#002E6E] font-bold text-lg mb-2">LOCAL SEO SERVICES</h3>
+                    <p class="text-gray-700">
+                        We help position your business in the first position of local searches performed by users. This
+                        is preferred type of SEO for small businesses.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+                    <div class="text-[#f85a03] text-3xl mb-4">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-[#002E6E] font-bold text-lg mb-2">NATIONAL SEO SERVICES</h3>
+                    <p class="text-gray-700">
+                        Our SEO experts has in-depth knowledge of the ongoing market trends and can make you a national
+                        leader in no time.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+                    <div class="text-[#f85a03] text-3xl mb-4">
+                        <i class="fas fa-flag-usa"></i>
+                    </div>
+                    <h3 class="text-[#002E6E] font-bold text-lg mb-2">INTERNATIONAL SEO SERVICES</h3>
+                    <p class="text-gray-700">
+                        Through our international SEO you can get more traffic from your desired country. No matter
+                        where your business is located, our SEO will help get traffic from country you want.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get in Touch Section -->
+    <section class="bg-white text-white py-16 px-4 md:px-20" id="get_in_touch">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
+                <!-- Left: Heading -->
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-light leading-tight text-black">
+                        Get<br><span class="font-bold text-[#f85a03]">in Touch</span>
+                    </h2>
+                    <hr class="mt-4 border-white/30 w-20">
+                </div>
+
+                <!-- Right: Subtext -->
+                <!-- <p class="text-sm md:text-base md:max-w-sm">
+                    Contact AdLift for a 360-degree marketing plan
+                </p> -->
+            </div>
+
+            <!-- Form -->
+            <form action="https://formsubmit.co/info@theneedleads.com" method="post" class="grid grid-cols-1 md:grid-cols-4 gap-4" novalidate>
+                <input type="text" name="name" placeholder="YOUR NAME" required
+                    class="px-5 py-4 rounded-full w-full text-black placeholder-gray-500 focus:outline-none border border-gray-300" />
+                <input type="email" name="email" placeholder="YOUR BUSINESS EMAIL" required
+                    class="px-5 py-4 rounded-full w-full text-black placeholder-gray-500 focus:outline-none border border-gray-300" />
+                <input type="tel" name="phone" placeholder="YOUR PHONE" required
+                    class="px-5 py-4 rounded-full w-full text-black placeholder-gray-500 focus:outline-none border border-gray-300" />
+                <button type="submit"
+                    class="bg-black text-white font-semibold px-6 py-4 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition">
+                    GET STARTED&nbsp;<i class="fas fa-envelope ml-2"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-orange-500 to-orange-700 text-white text-sm px-4 md:px-20 py-10">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start gap-8">
+
+            <!-- Left Section -->
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-bold tracking-widest">Needleads Techologies</span>
+                </div>
+                <div class="flex flex-wrap gap-3 text-xs">
+                    <a href="https://www.theneedleads.com/privacy-policy.php" class="cursor-pointer">Privacy</a>|
+                    <a href="https://www.theneedleads.com/term-condition.php" class="cursor-pointer">Terms & Conditions</a>
+                </div>
+                <p class="text-xs mt-2">Copyright © 2024 All Rights Reserved by @NeedleAds Technology</p>
+            </div>
+
+            <!-- Center Section -->
+            <div class="flex flex-wrap gap-5 text-sm">
+                <a href="https://www.theneedleads.com/blog/" class="hover:underline">Blog</a>
+                <a href="https://www.theneedleads.com/seo-company-janakpuri.php" class="hover:underline">SEO Services</a>
+                <a href="https://www.theneedleads.com/ppc-company-delhi.php" class="hover:underline">Google Ads</a>
+                <a href="https://www.theneedleads.com/website-design.php" class="hover:underline">Website Design</a>
+                <a href="https://www.theneedleads.com/website-development.php" class="hover:underline">Website Development</a>
+                <a href="https://www.theneedleads.com/mobile-app-development.php" class="hover:underline">Mobile Application</a>
+                <a href="https://www.theneedleads.com/email-marketing.php" class="hover:underline">Email Marketing</a>
+                <a href="https://www.theneedleads.com/social-media-marketing.php" class="hover:underline">SMM</a>
+                <a href="https://www.theneedleads.com/contact-us.php" class="hover:underline">Contact</a>
+                <!-- <a href="#" class="ml-2 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 text-sm">Sign in</a> -->
+            </div>
+
+            <!-- Right Section -->
+            <div class="flex flex-col items-start gap-3">
+                <p class="text-sm">Follow me around the web</p>
+                <div class="flex gap-3 text-white text-xl">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating CTA -->
+    <a href="https://wa.me/8750500075" target="_blank"
+        class="fixed bottom-5 right-5 z-50 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full flex items-center shadow-lg transition-all">
+        <i class="fab fa-whatsapp text-xl mr-2"></i> Chat with us
+    </a>
+
+</body>
+
+</html>
